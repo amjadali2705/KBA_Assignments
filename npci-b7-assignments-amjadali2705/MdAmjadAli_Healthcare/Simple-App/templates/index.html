@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{.title}}</title>
+    <script src="/public/scripts/index.js"></script>
+</head>
+
+<body>
+    <center>
+        <h1>{{.title}}</h1>
+        <h2>Add Patient</h2>
+        <form id="addForm">
+            <table>
+                <tr>
+                    <td>PatientId</td>
+                    <td><input type="text" id="patientId" required /> </td>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" id="name" required /> </td>
+                </tr>
+                <tr>
+                    <td>Age</td>
+                    <td><input type="text" id="age" required /> </td>
+                </tr>
+                <tr>
+                    <td>MedicalHistory</td>
+                    <td><input type="text" id="medicalHistory" required /> </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="submit" onclick="addData(event)">Add Patient</button>
+                        <button type="reset">Clear</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+        <h2>Get Patient</h2>
+        <form id="readForm">
+            <table>
+                <tr>
+                    <td>Enter PatientId</td>
+                    <td>
+                        <input id="patientIdInput" type="text" />
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <button type="submit" onclick="readData(event)">Get Patient</button>
+                        <button type="reset">Clear</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </center>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+fabric:
+  cas:
+  - "ca1.police.insuranceclaim.com"
+  - "ca1.government.insuranceclaim.com"
+  - "ca1.insurancecompany.insuranceclaim.com"
+  - "ca1.vehiclemanufacturer.insuranceclaim.com"
+  peers: 
+  - "peer1.police.insuranceclaim.com"
+  - "peer1.government.insuranceclaim.com"
+  - "peer1.insurancecompany.insuranceclaim.com"
+  - "peer1.vehiclemanufacturer.insuranceclaim.com"
+  orderers:
+  - "orderer1.insuranceclaim.com"
+  - "orderer2.insuranceclaim.com"
+  - "orderer3.insuranceclaim.com"
+  - "orderer4.insuranceclaim.com"
+  settings:
+    ca:
+      FABRIC_LOGGING_SPEC: DEBUG
+    peer:
+      FABRIC_LOGGING_SPEC: DEBUG
+    orderer:
+      FABRIC_LOGGING_SPEC: DEBUG

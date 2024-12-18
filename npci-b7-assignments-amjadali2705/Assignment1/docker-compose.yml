@@ -1,0 +1,9 @@
+services:
+
+  container1:
+    container_name: hellodockercontainer1
+    image: hellodockerimage
+
+  container2:
+    container_name: hellodockercontainer2
+    image: hellodockerimage
